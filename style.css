@@ -1,0 +1,199 @@
+body {
+  background-color: gray;
+  margin: 0px;
+}
+
+/*This section is for the footer*/
+footer {
+  background-color: tan;
+  font-size: x-large;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/*This section is for the navbar*/
+nav {
+  background-color: tan;
+  color: black;
+  display: grid;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5%;
+  grid-template-rows: 35px;
+  grid-template-areas: 'enterSite account trackOrders contactInfo';
+  justify-items: center;
+  align-items: center;
+}
+
+.enterSite {
+  grid-area: enterSite;
+  grid-column: 1/2;
+}
+
+.account {
+  grid-area: account;
+  grid-column: 2/3;
+}
+
+.trackOrders {
+  grid-area: trackOrders;
+  grid-column: 3/4;
+}
+
+.contactInfo {
+  grid-area: contactInfo;
+  grid-column: 4/5;
+}
+
+/*This section is for the actual image collage*/
+#container {
+  margin: 0px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 12.5vh 12.5vh 25vh 12.5vh 12.5vh 50vh 37.5vh 25vh 25vh;
+  grid-template-areas:
+    'logo logo logo  logo logo'
+    'logo logo logo logo logo'
+    'logo logo logo logo logo'
+    'facebook dMask lMask lMask mask'
+    'twitter dMask lMask lMask mask'
+    'birthday birthday joker dying wig'
+    'musical superhero superhero candy hat'
+    'muscial santa costume shipping'
+    'props santa spooky1 spooky2 spooky3';
+}
+
+div {
+  margin: 7px 5px 0px 5px;
+}
+
+.logo {
+  grid-area: logo;
+  grid-row: 1/4;
+  grid-column: 1/6;
+}
+
+.facebook {
+  grid-area: facebook;
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+
+.twitter {
+  grid-area: twitter;
+  grid-row: 5/6;
+  grid-column: 1/2;
+}
+
+.dMask {
+  grid-area: dMask;
+  grid-row: 4/6;
+  grid-column: 2/3;
+}
+
+.lMask {
+  grid-area: lMask;
+  grid-row: 4/6;
+  grid-column: 3/5;
+}
+
+.mask {
+  grid-area: mask;
+  grid-row: 4/6;
+  grid-column: 5/6;
+}
+
+.birthday {
+  grid-area: birthday;
+  grid-row: 6/7;
+  grid-column: 1/3;
+}
+
+.joker {
+  grid-area: joker;
+  grid-row: 6/7;
+  grid-column: 3/4;
+}
+
+.dying {
+  grid-area: dying;
+  grid-row: 6/7;
+  grid-column: 4/5;
+}
+
+.wig {
+  grid-area: wig;
+  grid-row: 6/7;
+  grid-column: 5/6;
+}
+
+.musical {
+  grid-area: musical;
+  grid-row: 7/9;
+  grid-column: 1/2;
+}
+
+.superhero {
+  grid-area: superhero;
+  grid-row: 7/8;
+  grid-column: 2/4;
+}
+
+.candy {
+  grid-area: candy;
+  grid-row: 7/8;
+  grid-column: 4/5;
+}
+
+.hat {
+  grid-area: hat;
+  grid-row: 7/8;
+  grid-column: 5/6;
+}
+
+.santa {
+  grid-area: santa;
+  grid-row: 8/10;
+  grid-column: 2/3;
+}
+
+.costume {
+  grid-area: costumes;
+  grid-row: 8/9;
+  grid-column: 3/5;
+}
+
+.shipping {
+  grid-area: shipping;
+  grid-row: 8/9;
+  grid-column: 5/6;
+}
+
+.props {
+  grid-area: props;
+  grid-row: 9/10;
+  grid-column: 1/2;
+}
+
+.spooky1 {
+  grid-area: spooky1;
+  grid-row: 9/10;
+  grid-column: 3/4;
+}
+
+.spooky2 {
+  grid-area: spooky2;
+  grid-row: 9/10;
+  grid-column: 4/5;
+}
+
+.spooky3 {
+  grid-area: spooky3;
+  grid-row: 9/10;
+  grid-column: 5/6;
+}
+
+/*This section is for styling the images*/
+img {
+  width: calc(100%);
+  height: calc(100%);
+}
